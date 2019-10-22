@@ -12,9 +12,8 @@ it 'checkout should respond to item' do
   expect(checkout).to respond_to(:item)
 end
 
-  it 'checkout should respond to price' do
-    checkout = Checkout.new
-    checkout.item
-    expect(item).to respond_to(:price)
-  end
+it "should be able to scan an item to buy" do
+  checkout = Checkout.new
+  expect(items).to eq(:total)
+end
 end
