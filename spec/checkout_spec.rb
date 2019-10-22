@@ -9,6 +9,12 @@ end
 
 it 'checkout should respond to item' do
   checkout = Checkout.new
-  expect(checkout).to respond_to(item)
+  expect(checkout).to respond_to(:item)
 end
+
+  it 'checkout should respond to price' do
+    checkout = Checkout.new
+    checkout.item
+    expect(item).to respond_to(:price)
+  end
 end
