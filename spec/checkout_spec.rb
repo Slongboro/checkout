@@ -12,10 +12,9 @@ it 'checkout should respond to scan' do
   expect(checkout).to respond_to(:scan)
 end
 
-it "should be able to see a total for all scanned items" do
+it "should be able to add an item to the basket" do
     checkout = Checkout.new
     checkout.scan(1)
-
-    expect(cust_basket).to eq 1
+    expect(checkout.cust_basket.sum).to eq 1
 end
 end
