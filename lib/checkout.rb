@@ -1,12 +1,24 @@
 class Checkout
 
-  attr_reader :item
+  attr_reader :cust_basket, :scan
+
 
   def initialize
+    @cust_basket = []
     @price
+    @scan
+
   end
 
-  def item(price)
+  def scan(price)
     @price = price
   end
+
+
+
+#  def cust_basket
+
+  #  cust_basket << @item
+
+#  end
 end

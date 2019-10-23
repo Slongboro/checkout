@@ -7,13 +7,16 @@ describe Checkout do
   expect(checkout).to be_kind_of(Checkout)
 end
 
-it 'checkout should respond to item' do
+it 'checkout should respond to scan' do
   checkout = Checkout.new
-  expect(checkout).to respond_to(:item)
+  expect(checkout).to respond_to(:scan)
 end
 
-it "should be able to scan an item to buy" do
-  checkout = Checkout.new
-  expect(items).to eq(:total)
+#it "should be able to scan an item to buy" do
+ #checkout = Checkout.new
+#  checkout.item
+#  item = 1
+
+#  expect(item).to eq 1
 end
-end
+#end
